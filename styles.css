@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
+
+body {
+    transition: 0.5s;
+    margin: 0px;;
+    padding-left: 0px;
+    background-color: rgb(224, 215, 199);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(57, 57, 57);
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300 ;
+    margin: 10px 0 ;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300 ;
+    margin: 50px 0 10px 0;
+}
+
+p {
+    margin: 0;
+    font-size: 20px;
+}
+
+a {
+    font-size: 20px;
+    color: rgb(240, 170, 20);
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.dark a {
+    color: rgb(245, 222, 179);;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    position: relative;   
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    box-shadow:
+        inset 4px 4px 4px rgb(255, 255, 255), 
+        inset -4px -4px  4px rgb(195 193 198 / 90%);
+    transition: 0.5s ;    
+}
+
+.dark {
+    background-color: rgb(57, 57, 57);
+    transition: 0.5s;
+    
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.dark > * {
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.mainText {
+    padding: 30px;   
+    margin-bottom: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 30px;
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.dark .square {
+    background-color: rgb(44, 41, 41);
+}
+
+#ecomm {
+    background-image: url("images/e-com.png");
+    background-size: cover;
+}
+
+#lms {
+    background-image: url("images/libraryMS.jpeg");
+    background-size: cover;
+}
+
+#selling {
+    background-image: url("images/selling.jpg");
+    background-size: cover;
+}
+
+#nothing {
+    background-image: url("images/tree.jpeg");
+    background-size: cover;
+}
+
+.subSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.favLan-img {
+    position: relative;
+    height: 350px;
+    width: 50%; 
+    display: block;
+    margin-bottom: 100px;
+}
+
+.cube {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    /* background-color: rgb(88, 31, 31); */
+    transform: rotate(-25deg) skew(25deg);
+}
+
+.cube::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 100%;
+    /* background-color: rgb(28, 86, 88); */
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+
+.cube::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 22px;
+    /* background-color: rgb(163, 105, 39); */
+    transform: skewx(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+#javascript {
+    background-image: url("images/js.jpeg");
+    background-size: cover;
+    background-color: rgb(39, 101, 216);
+    box-shadow: -60px 60px 20px rgb(50 50 50 / 15%);
+    left: 90px;
+    bottom: 200px;
+}
+
+#javascript::before {
+    background-color: rgb(98, 140, 218);
+}
+
+#javascript::after {
+    background-color: rgb(135, 164, 219);
+}
+
+#react {
+    background-image: url("images/react.jpeg");
+    background-size: cover;
+    background-color: rgb(39, 101, 216);
+    box-shadow: -100px 100px 20px rgb(50 50 50 / 15%);
+    left: 250px;
+    bottom: 290px;
+}
+
+#react::before {
+    background-color: rgb(98, 140, 218);
+}
+
+#react::after {
+    background-color: rgb(135, 164, 219);
+}
+
+#html {
+    background-image: url("images/html.jpeg");
+    background-size: cover;
+    background-color: rgb(72, 39, 216);
+    box-shadow: -100px 100px 20px rgb(50 50 50 / 15%);
+    left: 450px;
+    bottom: 200px;
+}
+
+#html::before {
+    background-color: rgb(74, 90, 182);
+}
+
+#html::after {
+    background-color: rgb(133, 139, 214);
+}
+
+#vb {
+    background-image: url("images/vb.jpeg");
+    background-size: cover;
+    background-color: rgb(228, 142, 31);
+    box-shadow: -100px 100px 20px rgb(50 50 50 / 15%);
+    left: 200px;
+    bottom: 180px;
+    left: 400px;
+    bottom: 10px;
+}
+
+#vb::before {
+    background-color: rgb(207, 152, 68);
+}
+
+#vb::after {
+    background-color: rgb(223, 204, 177);
+}
+
+#css {
+    background-image: url("images/css.jpeg");
+    background-size: cover;
+    background-color: rgb(72, 39, 216);
+    box-shadow: -100px 100px 20px rgb(50 50 50 / 15%);
+  
+    left: 160px;
+    bottom: 20px;
+}
+
+#css::before {
+    background-color: rgb(74, 90, 182);
+}
+
+#css::after {
+    background-color: rgb(133, 139, 214);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(140, 141, 88);
+    padding: 100px 30px;
+}
+
+.dark footer { 
+    background-color: rgb(15, 52, 94);
+}
+
+ul li {
+   display: inline-block; 
+   padding: 12px 16px;
+}
+
+ul li:hover {
+}
+
+ul li a {
+    color: black;
+    font-size: 30px;
+}
+
+@media only screen and (min-width: 970px) {
+    .mainText {
+        width: 50%;
+    }
+    .square {
+        width: 48%;
+        height: 600px;
+        margin: 1%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .favLan-img {
+        display: none;
+    }
+}
